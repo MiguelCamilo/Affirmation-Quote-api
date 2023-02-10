@@ -23,7 +23,7 @@ export function getQuotes(req, res) {
     db.collection('affirmations').get()
     .then((snapshot) => {
         const quotes = snapshot.docs.map(doc => {
-
+            
             let quote = doc.data()
             quote.id = doc.id
             return quote

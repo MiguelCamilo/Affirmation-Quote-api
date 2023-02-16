@@ -8,9 +8,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.post('/addquote', addQuote)
+app.post('/quotes', addQuote)
 
-app.get('/getquotes', getQuotes)
+app.get('/quotes', getQuotes)
 
 
 
